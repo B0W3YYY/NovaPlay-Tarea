@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>NovaPlay · Catálogo</title>
 <link rel="stylesheet" href="../../css/styles.css">
 </head>
@@ -13,7 +13,12 @@
     <img src="../../imgs/novaplay-logo-transparente.png" alt="" class="navbar-icono">
     <span>NovaPlay</span>
   </a>
-  <ul class="navbar-enlaces">
+  <button type="button" class="navbar-toggle" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbarEnlaces">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="navbar-enlaces" id="navbarEnlaces">
     <li><a href="inicio.html">Inicio</a></li>
     <li><a href="catalogo.html" class="activo">Catálogo</a></li>
     <li><a href="admin.html">Administración</a></li>
@@ -50,6 +55,7 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+<script src="nav.js"></script>
 <script src="datos.js"></script>
 <script src="catalogo.js"></script>
 </body>

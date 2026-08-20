@@ -23,6 +23,8 @@
 html {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  background: var(--bg);
+  overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
@@ -35,6 +37,7 @@ body {
   background: var(--bg);
   color: var(--texto);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 a {
@@ -178,7 +181,7 @@ a {
 .navbar-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .navbar-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-@media (max-width: 700px) {
+@media (max-width: 767.98px) {
 
   .navbar-nova:has(.navbar-toggle) {
     justify-content: space-between;
@@ -330,6 +333,12 @@ a {
     max-width: 280px;
     margin: 0 auto;
   }
+  .hero-texto {
+    text-align: center;
+  }
+  .hero-botones {
+    justify-content: center;
+  }
 }
 
 .contenedor {
@@ -374,6 +383,18 @@ a {
 .subtitulo {
   margin: -10px 0 0;
   color: var(--texto-tenue);
+}
+
+@media (max-width: 700px) {
+  .pagina h1,
+  .pagina .subtitulo,
+  .encabezado h1,
+  .encabezado p {
+    text-align: center;
+  }
+  .pagina .hero-botones {
+    justify-content: center;
+  }
 }
 
 .tarjeta-formulario,
