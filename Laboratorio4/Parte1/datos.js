@@ -85,7 +85,14 @@ function sembrarCatalogoFaltante() {
     { _id: 'seed-15', titulo: 'Miércoles', genero: 'Terror', duracion: null, fecha: '2022-11-23', disponible: true, tipo: 'Serie', poster: 'Miercoles.avif' },
     { _id: 'seed-16', titulo: 'The Crown', genero: 'Drama', duracion: null, fecha: '2016-11-04', disponible: true, tipo: 'Serie', poster: 'The-Crown.jpg' },
     { _id: 'seed-17', titulo: 'The Witcher', genero: 'Acción', duracion: null, fecha: '2019-12-20', disponible: true, tipo: 'Serie', poster: 'The-witcher.jpg' },
-    { _id: 'seed-18', titulo: 'Thrash', genero: 'Documental', duracion: 90, fecha: '2020-06-01', disponible: true, tipo: 'Película', poster: 'Thrash.jpg' }
+    { _id: 'seed-18', titulo: 'Thrash', genero: 'Documental', duracion: 90, fecha: '2020-06-01', disponible: true, tipo: 'Película', poster: 'Thrash.jpg' },
+    { _id: 'seed-19', titulo: 'Love Untangled', genero: 'Comedia', duracion: 123, fecha: '2024-03-01', disponible: true, tipo: 'Película', poster: 'Love-untangled.webp' },
+    { _id: 'seed-20', titulo: 'See You in My 19th Life', genero: 'Drama', duracion: null, fecha: '2023-04-14', disponible: true, tipo: 'Serie', poster: 'See-you-in-my-19th-life.jpg' },
+    { _id: 'seed-21', titulo: 'Vincenzo', genero: 'Acción', duracion: null, fecha: '2021-02-20', disponible: true, tipo: 'Serie', poster: 'Vincenzo.webp' },
+    { _id: 'seed-22', titulo: 'All of Us Are Dead', genero: 'Terror', duracion: null, fecha: '2022-01-28', disponible: true, tipo: 'Serie', poster: 'all-of-us-are-dead.webp' },
+    { _id: 'seed-23', titulo: 'Twinkling Watermelon', genero: 'Drama', duracion: null, fecha: '2023-09-18', disponible: true, tipo: 'Serie', poster: 'twinkling-watermelon.jpg' },
+    { _id: 'seed-24', titulo: 'Una Maleta', genero: 'Drama', duracion: null, fecha: '2022-01-01', disponible: true, tipo: 'Serie', poster: 'una-maleta.jpg' },
+    { _id: 'seed-25', titulo: 'Weak Hero Class 1', genero: 'Acción', duracion: null, fecha: '2022-11-18', disponible: true, tipo: 'Serie', poster: 'weak-hero.webp' }
   ];
 
   let catalogo = obtenerCatalogo();
