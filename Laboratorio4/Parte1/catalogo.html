@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaPlay · Catálogo</title>
+<link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+
+<nav class="navbar-nova">
+  <a href="../../index.html" class="navbar-marca">
+    <img src="../../imgs/novaplay-logo-transparente.png" alt="" class="navbar-icono">
+    <span>NovaPlay</span>
+  </a>
+  <ul class="navbar-enlaces">
+    <li><a href="inicio.html">Inicio</a></li>
+    <li><a href="catalogo.html" class="activo">Catálogo</a></li>
+    <li><a href="admin.html">Administración</a></li>
+  </ul>
+</nav>
+
+<main class="pagina">
+  <h1>Catálogo NovaPlay</h1>
+  <p class="subtitulo">
+    Explora, busca y filtra tu catálogo de series y películas. Haz clic en cualquier
+    título para ver su ficha completa.
+  </p>
+
+  <div class="filtros">
+    <input type="text" id="buscarTitulo" placeholder="Buscar por título...">
+    <select id="filtroGenero">
+      <option value="">Todos los géneros</option>
+      <option value="Acción">Acción</option>
+      <option value="Comedia">Comedia</option>
+      <option value="Drama">Drama</option>
+      <option value="Documental">Documental</option>
+      <option value="Anime">Anime</option>
+      <option value="Terror">Terror</option>
+    </select>
+  </div>
+
+  <p class="contador" id="contadorResultados">Mostrando 0 resultados</p>
+
+  <div class="grilla-tarjetas" id="grillaTarjetas"></div>
+</main>
+
+<footer class="pie">
+  <p>NovaPlay. Tu catálogo de series y películas, siempre a mano.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+<script src="datos.js"></script>
+<script src="catalogo.js"></script>
+</body>
+</html>

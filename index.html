@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaPlay</title>
+<link rel="stylesheet" href="css/styles.css">
+
+<noscript><style>body { opacity: 1 !important; }</style></noscript>
+</head>
+<body style="opacity: 0;">
+
+<nav class="navbar-nova">
+  <a href="index.html" class="navbar-marca">
+    <img src="imgs/novaplay-logo-transparente.png" alt="" class="navbar-icono">
+    <span>NovaPlay</span>
+  </a>
+
+  <button type="button" class="navbar-toggle" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="navbarEnlaces">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="navbar-enlaces" id="navbarEnlaces">
+    <li><a href="Laboratorio1/formulario.html">Catálogo</a></li>
+    <li><a href="Laboratorio2/gestion-catalogo.html">Persistencia</a></li>
+    <li><a href="Laboratorio3/tabla-catalogo.html">Tabla dinámica</a></li>
+    <li><a href="Laboratorio4/Parte2_Bootstrap/inicio.html">Bootstrap</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-texto">
+    <h1 id="tituloHero" class="texto-dividido">Todo NovaPlay en un solo lugar</h1>
+    <p class="hero-descripcion">
+      Esta es la zona administrativa de NovaPlay: aquí se agregan series y películas al
+      catálogo en el Bootstrap, se editan sus datos y se buscan en segundos. Todo el registro, la edición
+      y la búsqueda viven en una sola aplicación.
+    </p>
+  </div>
+  <div class="hero-imagen" aria-hidden="true">
+    <div class="stack-posters">
+      <article class="poster poster--stranger">
+        <img src="imgs/posters/Stranger-Things.webp" alt="" class="poster-img">
+        <span class="poster-genero">Terror</span>
+        <h3>Stranger Things</h3>
+      </article>
+      <article class="poster poster--godfather">
+        <img src="imgs/posters/The-Godfather.webp" alt="" class="poster-img">
+        <span class="poster-genero">Drama</span>
+        <h3>The Godfather</h3>
+      </article>
+      <article class="poster poster--spenser">
+        <img src="imgs/posters/Spenser-Confidencial.webp" alt="" class="poster-img">
+        <span class="poster-genero">Acción</span>
+        <h3>Spenser Confidencial</h3>
+      </article>
+      <article class="poster poster--naruto">
+        <img src="imgs/posters/Naruto.webp" alt="" class="poster-img">
+        <span class="poster-genero">Anime</span>
+        <h3>Naruto Shippuden</h3>
+      </article>
+    </div>
+  </div>
+</section>
+
+<footer class="pie">
+  <p>NovaPlay. Tu catálogo de series y películas, siempre a mano.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

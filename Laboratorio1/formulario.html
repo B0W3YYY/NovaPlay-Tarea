@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaPlay · Registro de contenido</title>
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="encabezado">
+  <h1><a href="../index.html" class="enlace-marca"><img src="../imgs/novaplay-logo-transparente.png" alt="" class="marca-icono">NovaPlay</a></h1>
+  <p>Agrega un título nuevo a tu catálogo</p>
+</header>
+
+<main class="contenedor">
+  <section class="tarjeta-formulario">
+    <h2>Nuevo título</h2>
+
+    <div class="campo">
+      <label for="titulo">Título</label>
+      <input type="text" id="titulo" placeholder="Ej: Stranger Things">
+    </div>
+
+    <div class="campo">
+      <label for="genero">Género</label>
+      <select id="genero">
+        <option value="" disabled selected>Selecciona un género</option>
+        <option value="Acción">Acción</option>
+        <option value="Comedia">Comedia</option>
+        <option value="Drama">Drama</option>
+        <option value="Documental">Documental</option>
+        <option value="Anime">Anime</option>
+        <option value="Terror">Terror</option>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="duracion">Duración (minutos)</label>
+      <input type="number" id="duracion" min="1" placeholder="Ej: 120">
+    </div>
+
+    <div class="campo">
+      <label for="fecha">Fecha de estreno</label>
+      <input type="date" id="fecha">
+    </div>
+
+    <div class="campo campo-checkbox">
+      <label for="disponible">
+        <input type="checkbox" id="disponible">
+        Disponible en catálogo
+      </label>
+    </div>
+
+    <button type="button" id="btnGuardar">Guardar</button>
+  </section>
+</main>
+
+<div id="modal" class="modal-propio oculto">
+  <div class="modal-contenido">
+    <button type="button" id="btnCerrarModal" class="modal-cerrar">&times;</button>
+    <div id="modalCuerpo"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
